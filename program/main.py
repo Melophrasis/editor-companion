@@ -2,7 +2,7 @@ import os
 from datetime import datetime
 import time
 
-AUDIO_FOLDER = r"/workspaces/edit-time-tracker/audio_folder"
+AUDIO_FOLDER = r"../sample_audio"
 
 def data_input():
     while True: 
