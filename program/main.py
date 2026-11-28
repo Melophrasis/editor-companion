@@ -16,4 +16,10 @@ def data_input():
                 seen[entry.name] = current
         time.sleep(3)
 
+def main():
+
+    data_input()
+
+if __name__ == "__main__":
+    main()
 
