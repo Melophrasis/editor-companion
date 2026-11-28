@@ -11,9 +11,9 @@ def data_input():
             if entry.is_file():
                 info = entry.stat()
                 current = (info.st_mtime, info.st_size)
-                if entry.name in seen and seen[entry.name] != current:
+                if entry.name in previous_cycle and previous_cycle[entry.name] != current:
                     print(f"EDITED: {entry.name}")
-                seen[entry.name] = current
+                previous_cycle[entry.name] = current
         time.sleep(3)
 
 def main():
