@@ -5,6 +5,7 @@ import time
 AUDIO_FOLDER = r"../sample_audio"
 
 def data_input():
+    previous_cycle = {}   # [modified time, size] according to last scan
     while True: 
         for entry in os.scandir(AUDIO_FOLDER):
             if entry.is_file():
